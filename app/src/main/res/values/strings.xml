@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ProyectoFinal</string>
+    <string name="tv_tituloLogIn">Log In</string>
+    <string name="et_UsuarioLogIn">Usuario</string>
+    <string name="et_ContraLogIn">Contraseña</string>
+    <string name="bt_registrarLogIn">Registrarse</string>
+    <string name="bt_Entrar">Entrar</string>
+
+</resources>

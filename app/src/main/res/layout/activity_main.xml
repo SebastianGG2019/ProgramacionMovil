@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_tituloLogIn"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:id="@+id/ET_USUARIOLOGIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_UsuarioLogIn"
+        android:inputType="number"
+        android:importantForAutofill="no" />
+    <EditText
+        android:id="@+id/ET_CONTRA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/et_ContraLogIn"
+        android:inputType="text"
+        android:importantForAutofill="no" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/BtnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="registrarButton"
+            android:text="@string/bt_registrarLogIn"
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/buttonEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="LogIn"
+            android:text="@string/bt_Entrar"
+            tools:ignore="OnClick" />
+    </TableRow>
+
+</LinearLayout>
