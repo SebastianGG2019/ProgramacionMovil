@@ -1,6 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_titulo"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/ET_documento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_documento"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/ET_Nombres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/et_nombres"
+        android:inputType="text"
+        android:importantForAutofill="no" />
+    <EditText
+        android:id="@+id/ET_apellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/et_apellidos"
+        android:inputType="text"
+        android:importantForAutofill="no" />
+    <EditText
+        android:id="@+id/ET_Usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/et_usuario"
+        android:inputType="text"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/ET_CONTRA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/et_contra"
+        android:inputType="textPassword"
+        android:autofillHints="" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/BT_Registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="accionRegistrar"
+            android:text="@string/bt_registrar" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/bt_buscar"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="listaUsuario"
+            android:text="@string/bt_listar_registros" />
+    </TableRow>
+    <ListView
+        android:id="@+id/LV_lista"
+        style="@android:style/Widget.DeviceDefault.ExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#168E24AA"
+        android:clickable="true"
+        android:focusable="true"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"/>
+</LinearLayout>
