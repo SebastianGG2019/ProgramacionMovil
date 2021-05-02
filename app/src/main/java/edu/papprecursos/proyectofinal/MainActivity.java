@@ -6,12 +6,17 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private EditText etUsuario;
     private EditText etContra;
+    private ListView listaUsuarios;
 
     SQLiteDatabase sqLiteDatabase;
     @Override
@@ -25,11 +30,12 @@ public class MainActivity extends AppCompatActivity {
         String User= etUsuario.getText().toString();
         String Contra= etContra.getText().toString();
         UsuarioDAO usuarioDAO = new UsuarioDAO(this,null);
+        Usuario validar = usuarioDAO.LogIn(User,Contra);
         if (User.equals("") && Contra.equals("")){
             Toast.makeText(this, "CAMPOS VACIOS", Toast.LENGTH_SHORT).show();
-        }else if (usuarioDAO.LogIn(User,Contra) == 1){
+        }else if (validar != null){
             Toast.makeText(this, "Datos correctos", Toast.LENGTH_SHORT).show();
-            Intent i = new Intent(MainActivity.this, Usuario.class);
+            Intent i = new Intent(MainActivity.this, Home.class);
             startActivity(i);
         }else{
             Toast.makeText(this, "Datos incorrectos", Toast.LENGTH_SHORT).show();

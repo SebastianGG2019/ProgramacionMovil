@@ -5,5 +5,13 @@
     <string name="et_ContraLogIn">Contraseña</string>
     <string name="bt_registrarLogIn">Registrarse</string>
     <string name="bt_Entrar">Entrar</string>
-
+    <string name="tv_titulo">Registro de usuarios</string>
+    <string name="et_documento">DOCUMENTO</string>
+    <string name="et_usuario">USUARIO</string>
+    <string name="et_nombres">NOMBRES</string>
+    <string name="et_apellidos">APELLIDOS</string>
+    <string name="et_contra">CONTRASEÑA</string>
+    <string name="bt_registrar">Registrar</string>
+    <string name="bt_buscar">Buscar</string>
+    <string name="bt_listar_registros">Listar</string>
 </resources>
