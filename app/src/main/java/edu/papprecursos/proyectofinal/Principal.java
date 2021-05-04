@@ -17,13 +17,14 @@ public class Principal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
+        taskBegin();
     }
 
     private void taskBegin(){
         TimerTask tarea = new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(Principal.this, Home.class);
+                Intent intent = new Intent(Principal.this, MainActivity.class);
                 startActivity(intent);
                 finish();
                 }

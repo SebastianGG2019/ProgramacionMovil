@@ -9,17 +9,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="360dp"
-        android:layout_height="381dp"
+        android:layout_width="323dp"
+        android:layout_height="280dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:contentDescription="@string/imgPrincipal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/gratisfinanzas"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="37dp" />
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="42dp"
+        app:srcCompat="@drawable/descarga" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -33,7 +30,6 @@
         android:id="@+id/tvBienvenido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
         android:textAlignment="center"
         android:textSize="26sp"
         android:text="@string/tvBienvenido"
