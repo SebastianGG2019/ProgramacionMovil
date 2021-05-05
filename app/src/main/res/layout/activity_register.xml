@@ -76,12 +76,12 @@
             />
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
+            android:id="@+id/volver"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="listaUsuario"
-            android:text="@string/bt_listar_registros" />
+            android:onClick="volver"
+            android:text="Button"
+            tools:text="@string/volver" />
     </TableRow>
     <ListView
         android:id="@+id/LV_lista"
