@@ -61,9 +61,9 @@
         android:layout_marginEnd="3px"
         android:layout_marginRight="3px"
         android:layout_weight="1"
-        android:onClick="TipsFinan"
+        android:onClick="finan_tips"
         android:padding="1mm"
-        android:text="Tips Financieros"
+        android:text="TIPS FINANCIEROS"
         android:textSize="24sp"
         android:textStyle="italic"/>
 
@@ -80,7 +80,7 @@
         android:layout_weight="1"
         android:onClick="Calendario"
         android:padding="1mm"
-        android:text="Calendario"
+        android:text="CALENDARIO"
         android:textSize="24sp"
         android:textStyle="italic"/>
 

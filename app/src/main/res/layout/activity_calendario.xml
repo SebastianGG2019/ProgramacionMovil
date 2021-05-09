@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AD94DE"
+    android:orientation="vertical"
+    tools:context=".CalendarioActivity"
+    >
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="MI AGENDA"
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="48dp"
+        ></TextView>
+
+    <LinearLayout
+
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bg_calendario"
+        android:layout_marginLeft="44dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        >
+
+        <CalendarView
+            android:id="@+id/calendarioView"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp">
+
+        </CalendarView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/timeButton"
+        android:background="@drawable/bg_btn"
+        android:text="Seleccionar hora"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="120dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#FFF"
+        android:onClick="popTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    ></Button>
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="volver"
+        android:text="Regresar"
+        tools:text="@string/volver" />
+
+
+</LinearLayout>

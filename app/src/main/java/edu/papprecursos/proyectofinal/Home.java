@@ -11,6 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Home  extends AppCompatActivity {
 
     Button gastos;
+    Button calendario;
+    Button tipsfinan;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,5 +27,27 @@ public class Home  extends AppCompatActivity {
                 startActivity(gastos);
             }
         });
+
+        calendario = (Button)findViewById(R.id.btnCalendario);
+        calendario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent calendario = new Intent(Home.this, CalendarioActivity.class);
+                startActivity(calendario);
+            }
+        });
+
+         tipsfinan = (Button) findViewById(R.id.btnTipsFinan);
+         tipsfinan.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent tipsfinan =  new Intent(Home.this, TipsFinan.class);
+                 startActivity(tipsfinan);
+             }
+         });
+
+
     }
+
+
 }
