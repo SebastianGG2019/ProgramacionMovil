@@ -13,5 +13,13 @@
     <string name="et_contra">CONTRASEÑA</string>
     <string name="bt_registrar">Registrar</string>
     <string name="bt_buscar">Buscar</string>
-    <string name="bt_listar_registros">Listar</string>
+    <string name="bt_listar_registros">Log in</string>
+    <string name="tvTitulo2"> Finanzas Personales </string>
+    <string name="btnIngresos"> Ingresos </string>
+    <string name="btnGastos"> Gastos </string>
+    <string name="btnTipsFinan"> Tips Financieros </string>
+    <string name="btnCalendario"> Calendario </string>
+    <string name="imgPrincipal"></string>
+    <string name="tvBienvenido">Bienvenido</string>
+    <string name="volver">Log in</string>
 </resources>

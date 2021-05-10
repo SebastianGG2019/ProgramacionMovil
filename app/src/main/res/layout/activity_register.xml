@@ -67,21 +67,15 @@
             android:layout_weight="1"
             android:onClick="accionRegistrar"
             android:text="@string/bt_registrar" />
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/bt_buscar"
-            />
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
+            android:id="@+id/volver"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="listaUsuario"
-            android:text="@string/bt_listar_registros" />
+            android:onClick="volver"
+            android:text="Volver"
+            tools:text="@string/volver" />
+
     </TableRow>
     <ListView
         android:id="@+id/LV_lista"

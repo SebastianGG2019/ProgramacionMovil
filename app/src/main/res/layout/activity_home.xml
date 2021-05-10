@@ -1,6 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvTitulo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1mm"
+        android:text="@string/tvTitulo2"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnIngresos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40px"
+        android:layout_marginStart="3px"
+        android:layout_marginLeft="3px"
+        android:layout_marginTop="3px"
+        android:layout_marginEnd="3px"
+        android:layout_marginRight="3px"
+        android:layout_marginBottom="1px"
+        android:layout_weight="1"
+        android:onClick="Ingresos"
+        android:padding="1mm"
+        android:text="Ingresos"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnGastos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40px"
+        android:layout_marginStart="3px"
+        android:layout_marginLeft="3px"
+        android:layout_marginTop="3px"
+        android:layout_marginEnd="3px"
+        android:layout_marginRight="3px"
+        android:layout_weight="1"
+        android:onClick="Gastos"
+        android:padding="3sp"
+        android:text="Gastos"
+        android:textSize="24sp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/btnTipsFinan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40px"
+        android:layout_marginStart="3px"
+        android:layout_marginLeft="3px"
+        android:layout_marginTop="3px"
+        android:layout_marginEnd="3px"
+        android:layout_marginRight="3px"
+        android:layout_weight="1"
+        android:onClick="finan_tips"
+        android:padding="1mm"
+        android:text="TIPS FINANCIEROS"
+        android:textSize="24sp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/btnCalendario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40px"
+        android:layout_marginStart="3px"
+        android:layout_marginLeft="3px"
+        android:layout_marginTop="3px"
+        android:layout_marginEnd="3px"
+        android:layout_marginRight="3px"
+        android:layout_weight="1"
+        android:onClick="Calendario"
+        android:padding="1mm"
+        android:text="CALENDARIO"
+        android:textSize="24sp"
+        android:textStyle="italic"/>
+
+
+</LinearLayout>

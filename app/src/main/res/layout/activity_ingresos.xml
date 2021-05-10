@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digita tus ingresos"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/ET_documento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresos"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/BT_ingresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="accionRegistrar"
+            android:text="Ingresar Datos" />
+
+    </TableRow>
+    <ListView
+        android:id="@+id/LV_lista"
+        style="@android:style/Widget.DeviceDefault.ExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#168E24AA"
+        android:clickable="true"
+        android:focusable="true"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"/>
+</LinearLayout>

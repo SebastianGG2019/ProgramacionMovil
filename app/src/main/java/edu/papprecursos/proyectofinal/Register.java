@@ -4,14 +4,11 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.util.ArrayList;
 
 public class Register extends AppCompatActivity {
     private EditText etDocumento;
@@ -25,12 +22,15 @@ public class Register extends AppCompatActivity {
     String nombres;
     String apellidos;
     String contra;
+    Button volver;
+
     private GestionBD gestionBD;
     SQLiteDatabase sqLiteDatabase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        volver();
         inicializador();
     }
     public void accionRegistrar(View view){
@@ -45,12 +45,15 @@ public class Register extends AppCompatActivity {
         usuarioDAO.insert(usuario);
     }
 
-    public void listaUsuario(View view){
-        UsuarioDAO  usuarioDAO = new UsuarioDAO(this, listaUsuarios);
-        ArrayList<Usuario> usuarioArrayList = usuarioDAO.getUsuario();
-        ArrayAdapter<Usuario> adapter = new ArrayAdapter<Usuario>(this, android.R.layout.simple_list_item_1,usuarioArrayList);
-        listaUsuarios.setAdapter(adapter);
-        Toast.makeText(this,""+usuarioArrayList.size(),Toast.LENGTH_SHORT).show();
+    public void volver(){
+        volver = (Button)findViewById(R.id.volver);
+        volver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gastos = new Intent(Register.this, MainActivity.class);
+                startActivity(gastos);
+            }
+        });
     }
 
     private void inicializador(){
